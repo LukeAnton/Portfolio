@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Website",
+  "main": "index.js",
+  "homepage": "https://github.com/LukeAnton/PWebsite#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Luke A Firth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeAnton/PWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LukeAnton/PWebsite/issues"
+  }
+}
