@@ -12,6 +12,7 @@ let showMenu = false;
 $(document).ready(function() {
   $(".menu-btn").click(function() {
     $("h1, h2, p,.skills, h3,.mail, .icons").toggle();
+    $("h1, h2, p,.skills, h3,.mail, .icons").fadeOut(1000);
   });
 });
 
