@@ -82,7 +82,7 @@
 
   // Branding Side
   &-branding {
-    background: $secondary-color;
+    background: none;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -98,7 +98,8 @@
       border-radius: 50%;
       border: none;
       background-size: 290px;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+      background-color: rgba(black, 0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     }
     .hi {
       /*   margin-top: 100px

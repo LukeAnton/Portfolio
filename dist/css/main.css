@@ -64,7 +64,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #87f1ff;
+    background: none;
     transform: translate3d(0, 100%, 0);
     transition: all 1s ease-out; }
     .menu-branding.show {
@@ -76,7 +76,8 @@
       border-radius: 50%;
       border: none;
       background-size: 290px;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); }
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
     .menu-branding .hi {
       /*   margin-top: 100px
     font-family: "Rubik", sans-serif;
