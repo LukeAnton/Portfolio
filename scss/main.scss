@@ -29,6 +29,7 @@ h1 {
 h1,
 h2,
 h3 {
+  text-shadow: -2px 2px 10px black;
   text-align: center;
   margin: 0;
   font-weight: 300;
@@ -55,7 +56,9 @@ header {
   z-index: 2;
   width: 100%;
 }
-
+.traits {
+  text-shadow: -2px 2px 2px black;
+}
 .text-secondary {
   color: $secondary-color;
 }
@@ -148,7 +151,10 @@ main {
     "bioimage bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
-
+  p,
+  .skills {
+    text-shadow: -1px 1px 4px black;
+  }
   .bio-image {
     grid-area: bioimage;
     margin-left: auto;
