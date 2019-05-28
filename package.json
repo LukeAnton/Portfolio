@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Website",
   "main": "index.js",
-  "homepage": "https://github.com/LukeAnton/PWebsite#readme",
+  "homepage": "https://LukeAnton.github.io/Portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"

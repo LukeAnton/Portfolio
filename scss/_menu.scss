@@ -69,7 +69,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 7);
+    background: ($primary-color, 7);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -82,7 +82,7 @@
 
   // Branding Side
   &-branding {
-    background: $secondary-color;
+    background: rgba($secondary-color, 0.7);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -122,10 +122,14 @@
   }
 
   .nav-link {
+    width: 100%;
+    height: 60px;
+
+    border-radius: 100px;
     display: inline-block;
     position: relative;
     font-size: 20px;
-    padding: 1rem 0;
+    padding: 25px 50px 58px 50px;
     text-transform: uppercase;
     font-weight: 500;
     color: white;
@@ -134,8 +138,11 @@
   }
   .nav-link:hover {
     @include easeOut;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid $secondary-color;
     color: $secondary-color;
     font-weight: 200;
+    margin-top: -5px;
     font-size: 30px;
   }
 }
