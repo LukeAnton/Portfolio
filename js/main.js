@@ -11,7 +11,7 @@ let showMenu = false;
 // Jquizzle for menu tooggle
 $(document).ready(function() {
   $(".menu-btn").click(function() {
-    $("h1, h2, p,.skills, h3,.mail, .icons").toggle();
+    $("h1, h2, p,.skills, h3,.mail, .icons, .projects").toggle();
   });
 });
 
