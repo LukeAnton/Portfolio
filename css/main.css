@@ -353,7 +353,7 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr); }
   .projects .img1,
   .projects .img2,
@@ -362,7 +362,8 @@ main {
   .projects .img5,
   .projects .img6 {
     width: 100%;
-    border: 3px white solid; }
+    border-bottom: 40px rgba(0, 0, 0, 0.3) solid;
+    border-radius: 20px 20px 8px 8px; }
     .projects .img1:hover,
     .projects .img2:hover,
     .projects .img3:hover,
@@ -370,8 +371,13 @@ main {
     .projects .img5:hover,
     .projects .img6:hover {
       opacity: 0.5;
-      border-color: #87f1ff;
       transition: all 1s ease-out; }
+  .projects .project-text {
+    text-decoration: none;
+    text-align: center;
+    margin-top: -33px;
+    color: white;
+    text-shadow: -1px 1px 4px black; }
 
 .boxes {
   margin-top: 150px;
