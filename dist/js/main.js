@@ -13,16 +13,16 @@ $(document).ready(function() {
   $(".menu-btn").click(function() {
     $("h1, h2, p,.skills, h3,.mail, .icons, .projects").toggle();
   });
-  // $(".preloader").click(() => {
-  //   $(".preloader").toggle();
-  // });
-  let fade_out = function() {
-    $(".preloader")
-      .fadeOut()
-      .empty();
-  };
-
-  setTimeout(fade_out, 10000);
+  $(".preloader").click(() => {
+    $(".preloader").toggle();
+  });
+  // let fade_out = function() {
+  //   $(".preloader")
+  //     .fadeOut()
+  //     .empty();
+  // };
+  //
+  // setTimeout(fade_out, 10000);
 });
 
 menuBtn.addEventListener("click", toggleMenu);
@@ -47,10 +47,6 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
-// animejs
-// original cords
-// 215,110 0,110 0,0 49.3,0 215,0"
 
 let preload = anime.timeline({
   duration: 4000
