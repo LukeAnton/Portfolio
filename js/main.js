@@ -48,13 +48,38 @@ function toggleMenu() {
   }
 }
 
+let pre = anime.timeline({
+  duration: 1500
+});
+pre
+  .add({
+    targets: "h1, h2, .icons",
+    opacity: 0
+  })
+  .add({
+    targets: "h1, h2, .icons",
+    scale: 1.2,
+    opacity: 1
+  })
+  .add({
+    targets: "h1, h2, .icons",
+    scale: 1
+  });
+
 let preload = anime.timeline({
   duration: 4000
 });
 preload
   .add({
     targets: ".spinner",
-    rotate: "360deg",
+    rotate: "358deg",
+    duration: 3000
+  })
+  .add({
+    targets: ".spinner",
+    scale: 0.5,
+    rotate: "-366deg",
+    easing: "easeInExpo",
     duration: 3000
   })
   .add({
@@ -83,7 +108,8 @@ preload
         { value: "215, 110 0, 110 0, 0 0, 60 47, 45" },
         { value: "215, 110 0, 110 0, 0 0, 100 47, 45" },
         { value: "215, 110 0, 110 0, 0 0, 100 55, 110" },
-        { value: "215, 110 0, 110 0, 0 0, 200 55, 110" }
+        { value: "215, 110 0, 110 0, 0 0, 200 55, 110" },
+        { value: "215, 110 0, 200 0, 0 0, 300 55, 200" }
       ],
       easing: "easeOutQuad",
       duration: 5600,
@@ -115,19 +141,30 @@ preload
     },
     "-=5000"
   )
+  .add(
+    {
+      targets: "h1, h2, .icons",
+      scale: 1.2,
+      duration: 1000,
+      easing: "easeOutExpo"
+    },
+    "-=7200"
+  )
   .add({
-    targets: "h1",
-    opacity: 0,
-    scale: [1]
+    targets: "h1, h2, .icons",
+    scale: 1
   })
   .add({
-    targets: "h1",
-    opacity: 1,
-    scale: [1.08],
+    targets: "h1, h2, .icons",
+    scale: [1.1],
     duration: 1000,
     easing: "easeOutExpo"
   })
-  .add({
-    targets: "h1",
-    scale: [1]
-  });
+  .add(
+    {
+      targets: "h1, h2, .icons",
+      scale: 1,
+      easing: "easeOutExpo"
+    },
+    "-=7000"
+  );
