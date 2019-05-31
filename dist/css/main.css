@@ -202,7 +202,7 @@
   height: 100vh; }
   .preloader .polymorph {
     stroke-width: 1px;
-    fill: rgba(135, 241, 255, 0.4);
+    fill: rgba(135, 241, 255, 0.2);
     filter: url(#glow); }
 
 .spinner {
@@ -250,34 +250,6 @@
   box-shadow: 0 0 30px white, inset 0 0 30px white;
   border-radius: 1000px;
   position: absolute; }
-
-#cta,
-#cta2 {
-  z-index: 11;
-  position: absolute;
-  margin: 10em auto 0 auto;
-  left: 0;
-  right: 0;
-  background: none;
-  border: 2px dashed #fff;
-  border-radius: 15px;
-  padding: 15px;
-  color: #fff;
-  font-size: 1.5em;
-  cursor: pointer;
-  outline: 0; }
-
-p {
-  font-size: 1.2em; }
-
-#blip {
-  position: absolute;
-  color: #398f5a;
-  right: 25%;
-  top: 0%;
-  opacity: 0;
-  width: 30%;
-  transform: translateY(-800px); }
 
 * {
   box-sizing: border-box; }
