@@ -2,12 +2,17 @@
   position: fixed;
   z-index: 10;
   height: 100vh;
+  stroke: rgba($secondary-color, 0.5);
   .polymorph {
-    stroke-width: 1px;
-    fill: rgba($secondary-color, 0.2);
-    filter: url(#glow);
+    stroke-width: 0.1px;
+
+    fill: rgba(black, 0.5);
+    /* filter: url(#glow); */
   }
 }
+/* #cta {
+  position: absolute;
+} */
 .spinner {
   z-index: 11;
   width: 200px;
@@ -19,10 +24,11 @@
   transform: translateX(-100px);
   top: 36.1%;
   position: absolute;
-  fill: #fff;
+  fill: $secondary-color;
   stroke: black;
   stroke-miterlimit: 10;
   stroke-width: 10px;
+  filter: url(#glow);
 }
 
 .circle {
@@ -37,7 +43,7 @@
   transform: translateX(-90px);
   border-radius: 1000px;
   position: absolute;
-  fill: #fff;
+  fill: $secondary-color;
   stroke: black;
   stroke-miterlimit: 10;
   stroke-width: 5px;
@@ -51,7 +57,25 @@
   display: inline-block;
   left: 50%;
   top: 38%;
-  box-shadow: 0 0 30px white, inset 0 0 30px white;
+  box-shadow: 0 0 2px $secondary-color, inset 0 0 3px $secondary-color;
   border-radius: 1000px;
   position: absolute;
+}
+
+.loading {
+  height: 1px;
+  transform-origin: top;
+  font-size: 20px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 20;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 52%;
+  text-shadow: 1px 1px 4px black;
+  left: 50%;
+
+  margin-right: 56px;
+  margin-left: -56px;
 }
