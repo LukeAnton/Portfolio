@@ -16,13 +16,13 @@ $(document).ready(function() {
   $(".preloader").click(() => {
     $(".preloader").toggle();
   });
-  // let fade_out = function() {
-  //   $(".preloader")
-  //     .fadeOut()
-  //     .empty();
-  // };
-  //
-  // setTimeout(fade_out, 10000);
+  let fade_out = function() {
+    $(".preloader")
+      .fadeOut()
+      .empty();
+  };
+
+  setTimeout(fade_out, 15000);
 });
 
 menuBtn.addEventListener("click", toggleMenu);
@@ -47,24 +47,36 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
+// let btn = document.getElementById("cta");
+// btn.onclick = function() {
 let pre = anime.timeline({
   duration: 1500
 });
 pre
   .add({
-    targets: "h1, h2, .icons",
+    targets: "h1, h2, .icons, .loading",
     opacity: 0
   })
   .add({
-    targets: "h1, h2, .icons",
+    targets: "h1, h2, .icons, .loading, .spinner",
     scale: 1.2,
     opacity: 1
   })
   .add({
-    targets: "h1, h2, .icons",
-    scale: 1
-  });
+    targets: ".circle ",
+    scale: 0.9
+  })
+  .add({
+    targets: ".spinner",
+    scale: 4
+  })
+  .add(
+    {
+      targets: "h1, h2, .icons, .loading, .circle",
+      scale: 1
+    },
+    "-=1500"
+  );
 
 let preload = anime.timeline({
   duration: 4000
@@ -94,7 +106,7 @@ preload
     {
       targets: ".spinner",
       duration: 3000,
-      scale: 0.93
+      scale: 0.91
     },
     "-=5600"
   )
@@ -111,7 +123,7 @@ preload
         { value: "215, 110 0, 110 0, 0 0, 200 55, 110" },
         { value: "215, 110 0, 200 0, 0 0, 300 55, 200" }
       ],
-      easing: "easeOutQuad",
+      easing: "easeInExpo",
       duration: 5600,
       loop: false
     },
@@ -143,6 +155,14 @@ preload
   )
   .add(
     {
+      targets: " .loading",
+      duration: 2000,
+      opacity: 0
+    },
+    "-=4500"
+  )
+  .add(
+    {
       targets: "h1, h2, .icons",
       scale: 1.2,
       duration: 1000,
@@ -154,12 +174,6 @@ preload
     targets: "h1, h2, .icons",
     scale: 1
   })
-  .add({
-    targets: "h1, h2, .icons",
-    scale: [1.1],
-    duration: 1000,
-    easing: "easeOutExpo"
-  })
   .add(
     {
       targets: "h1, h2, .icons",
@@ -168,3 +182,4 @@ preload
     },
     "-=7000"
   );
+// };

@@ -15,21 +15,22 @@
     <script src="js/jquery.js"></script>
   </head>
   <body id="bg-img">
-    <!-- Anime Js -->
+    <!-- <button id="cta">Click Me</button> -->
     <svg class="preloader" viewBox="1 -1 215 110">
-      <filter id="glow">
-        <fegaussianblur
-          class="blur"
-          result="coloredBlur"
-          stddeviation="4"
-        ></fegaussianblur>
-        <femerge>
-          <femergenode in="coloredBlur"></femergenode>
-          <femergenode in="coloredBlur"></femergenode>
-          <femergenode in="coloredBlur"></femergenode>
-          <femergenode in="SourceGraphic"></femergenode>
-        </femerge>
-      </filter>
+      <!--
+        <filter id="glow">
+          <fegaussianblur
+            class="blur"
+            result="coloredBlur"
+            stddeviation="2"
+          ></fegaussianblur>
+          <femerge>
+            <femergenode in="coloredBlur"></femergenode>
+
+            <femergenode in="SourceGraphic"></femergenode>
+          </femerge>
+        </filter>
+      -->
       <polygon class="polymorph" points="215,110 0,110 0,-2 49.3,-2 215,-2" />
     </svg>
     <!-- ring loader -->
@@ -42,6 +43,36 @@
     <!-- spinner -->
 
     <svg class="spinner" viewBox="0 0 1280.6 1280.6">
+      <filter id="glow">
+        <fegaussianblur
+          class="blur"
+          result="coloredBlur"
+          stddeviation="1"
+        ></fegaussianblur>
+        <femerge>
+          <femergenode in="coloredBlur"></femergenode>
+
+          <femergenode in="SourceGraphic"></femergenode>
+        </femerge>
+      </filter>
+      <!--
+        <filter id="dropshadow" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+          stdDeviation is how much to blur
+          <feOffset dx="0" dy="0" result="offsetblur" />
+          how much to offset
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0.8" />
+            slope is the opacity of the shadow
+          </feComponentTransfer>
+          <feMerge>
+            <feMergeNode />
+            this contains the offset blurred image
+            <feMergeNode in="SourceGraphic" />
+            this contains the element that the filter is applied to
+          </feMerge>
+        </filter>
+      -->
       <path
         class="spinner"
         d="M640.3,58.4c19.3,0,38.4,0.9,57.2,2.8c9.6,0.9,17.9-6.9,17.9-17V19.6c0-9.4-7.3-17.1-16.3-17.1H581.5
@@ -71,6 +102,7 @@
     	c9,0,16.3-7.6,16.3-17.1v-24.7c0-10.1-8.3-17.9-17.9-17C678.7,1221.2,659.6,1222.1,640.3,1222.1z"
       />
     </svg>
+    <h4 class="loading">Loading...</h4>
 
     <!-- spinner -->
     <div class="shadow"></div>
@@ -114,14 +146,14 @@
         <!-- GitHub Icon -->
         <a class="gh" href="https://github.com/LukeAnton">
           <img src="icons/gh.svg" alt="github" />
-          <!-- LinkdIn Icon -->
-          <a class="link" href="https://www.linkedin.com/in/lukeantonfirth/">
-            <img src="icons/link.svg" alt="linkdIn" />
-          </a>
-          <!-- Twitter Icon -->
-          <a class="twit" href="https://twitter.com/LukeAntonF">
-            <img src="icons/twit.svg" alt="twitter" />
-          </a>
+        </a>
+        <!-- LinkdIn Icon -->
+        <a class="link" href="https://www.linkedin.com/in/lukeantonfirth/">
+          <img src="icons/link.svg" alt="linkdIn" />
+        </a>
+        <!-- Twitter Icon -->
+        <a class="twit" href="https://twitter.com/LukeAntonF">
+          <img src="icons/twit.svg" alt="twitter" />
         </a>
       </div>
     </main>

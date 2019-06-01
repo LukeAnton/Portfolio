@@ -76,7 +76,7 @@
       border: none;
       background-size: 290px;
       border: 3px solid #87f1ff;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
     .menu-branding .hi {
       /*   margin-top: 100px
@@ -199,12 +199,16 @@
 .preloader {
   position: fixed;
   z-index: 10;
-  height: 100vh; }
+  height: 100vh;
+  stroke: rgba(135, 241, 255, 0.5); }
   .preloader .polymorph {
-    stroke-width: 1px;
-    fill: rgba(135, 241, 255, 0.2);
-    filter: url(#glow); }
+    stroke-width: 0.1px;
+    fill: rgba(0, 0, 0, 0.5);
+    /* filter: url(#glow); */ }
 
+/* #cta {
+  position: absolute;
+} */
 .spinner {
   z-index: 11;
   width: 200px;
@@ -216,10 +220,11 @@
   transform: translateX(-100px);
   top: 36.1%;
   position: absolute;
-  fill: #fff;
+  fill: #87f1ff;
   stroke: black;
   stroke-miterlimit: 10;
-  stroke-width: 10px; }
+  stroke-width: 10px;
+  filter: url(#glow); }
 
 .circle {
   transform-origin: center;
@@ -233,7 +238,7 @@
   transform: translateX(-90px);
   border-radius: 1000px;
   position: absolute;
-  fill: #fff;
+  fill: #87f1ff;
   stroke: black;
   stroke-miterlimit: 10;
   stroke-width: 5px; }
@@ -247,9 +252,25 @@
   display: inline-block;
   left: 50%;
   top: 38%;
-  box-shadow: 0 0 30px white, inset 0 0 30px white;
+  box-shadow: 0 0 2px #87f1ff, inset 0 0 3px #87f1ff;
   border-radius: 1000px;
   position: absolute; }
+
+.loading {
+  height: 1px;
+  transform-origin: top;
+  font-size: 20px;
+  color: #87f1ff;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 20;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 52%;
+  text-shadow: 1px 1px 4px black;
+  left: 50%;
+  margin-right: 56px;
+  margin-left: -56px; }
 
 * {
   box-sizing: border-box; }
