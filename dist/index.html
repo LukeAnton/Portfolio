@@ -16,33 +16,38 @@
   </head>
   <body id="bg-img">
     <!-- <button id="cta">Click Me</button> -->
-    <svg class="preloader" viewBox="1 -1 215 110">
-      <!--
-        <filter id="glow">
-          <fegaussianblur
-            class="blur"
-            result="coloredBlur"
-            stddeviation="2"
-          ></fegaussianblur>
-          <femerge>
-            <femergenode in="coloredBlur"></femergenode>
+    <!-- <svg class="preloader" viewBox="1 -1 215 110"> -->
+    <!--
+      <filter id="glow">
+        <fegaussianblur
+          class="blur"
+          result="coloredBlur"
+          stddeviation="2"
+        ></fegaussianblur>
+        <femerge>
+          <femergenode in="coloredBlur"></femergenode>
 
-            <femergenode in="SourceGraphic"></femergenode>
-          </femerge>
-        </filter>
-      -->
+          <femergenode in="SourceGraphic"></femergenode>
+        </femerge>
+      </filter>
+    -->
+    <!--
       <polygon class="polymorph" points="215,110 0,110 0,-2 49.3,-2 215,-2" />
-    </svg>
+      </svg>
+    -->
     <!-- ring loader -->
-    <svg class="circle" viewBox="0 0 884.2285 884.2285">
-      <path
-        class="circle"
-        d="M442.1143,2.5C199.3223,2.5,2.5,199.3223,2.5,442.1143S199.3223,881.7285,442.1143,881.7285,881.7285,684.9062,881.7285,442.1143,684.9063,2.5,442.1143,2.5Zm0,833.8418c-217.7256,0-394.2276-176.502-394.2276-394.2275S224.3887,47.8867,442.1143,47.8867s394.2275,176.502,394.2275,394.2276S659.84,836.3418,442.1143,836.3418Z"
-      />
-    </svg>
+    <!--
+      <svg class="circle" viewBox="0 0 884.2285 884.2285">
+        <path
+          class="circle"
+          d="M442.1143,2.5C199.3223,2.5,2.5,199.3223,2.5,442.1143S199.3223,881.7285,442.1143,881.7285,881.7285,684.9062,881.7285,442.1143,684.9063,2.5,442.1143,2.5Zm0,833.8418c-217.7256,0-394.2276-176.502-394.2276-394.2275S224.3887,47.8867,442.1143,47.8867s394.2275,176.502,394.2275,394.2276S659.84,836.3418,442.1143,836.3418Z"
+        />
+      </svg>
+    -->
     <!-- spinner -->
 
-    <svg class="spinner" viewBox="0 0 1280.6 1280.6">
+    <!--
+      <svg class="spinner" viewBox="0 0 1280.6 1280.6">
       <filter id="glow">
         <fegaussianblur
           class="blur"
@@ -55,57 +60,62 @@
           <femergenode in="SourceGraphic"></femergenode>
         </femerge>
       </filter>
-      <!--
-        <filter id="dropshadow" height="200%">
-          <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
-          stdDeviation is how much to blur
-          <feOffset dx="0" dy="0" result="offsetblur" />
-          how much to offset
-          <feComponentTransfer>
-            <feFuncA type="linear" slope="0.8" />
-            slope is the opacity of the shadow
-          </feComponentTransfer>
-          <feMerge>
-            <feMergeNode />
-            this contains the offset blurred image
-            <feMergeNode in="SourceGraphic" />
-            this contains the element that the filter is applied to
-          </feMerge>
-        </filter>
-      -->
+    -->
+    <!--
+      <filter id="dropshadow" height="200%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+        stdDeviation is how much to blur
+        <feOffset dx="0" dy="0" result="offsetblur" />
+        how much to offset
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.8" />
+          slope is the opacity of the shadow
+        </feComponentTransfer>
+        <feMerge>
+          <feMergeNode />
+          this contains the offset blurred image
+          <feMergeNode in="SourceGraphic" />
+          this contains the element that the filter is applied to
+        </feMerge>
+      </filter>
+    -->
+    <!--
       <path
         class="spinner"
         d="M640.3,58.4c19.3,0,38.4,0.9,57.2,2.8c9.6,0.9,17.9-6.9,17.9-17V19.6c0-9.4-7.3-17.1-16.3-17.1H581.5
-    	c-9,0-16.3,7.6-16.3,17.1v24.7c0,10.1,8.3,17.9,17.9,17C601.9,59.4,621,58.4,640.3,58.4z"
+            c-9,0-16.3,7.6-16.3,17.1v24.7c0,10.1,8.3,17.9,17.9,17C601.9,59.4,621,58.4,640.3,58.4z"
       />
       <path
         class="spinner"
         d="M715.4,139c0-8.7-6.3-16-14.5-17c-19.9-2.3-40.1-3.5-60.5-3.5s-40.7,1.2-60.5,3.5c-8.3,1-14.5,8.3-14.5,17
-    	v409.2c0,9.4-7.3,17.1-16.3,17.1l-410.8-0.3c-8.2,0-15.2,6.4-16.2,14.9c-2.3,19.8-3.5,40-3.5,60.4c0,20.2,1.2,40.1,3.4,59.7
-    	c1,8.6,7.9,15,16.2,15l410.9,0.3c9,0,16.3,7.6,16.3,17.1v409.3c0,8.7,6.3,16,14.5,17c19.9,2.3,40.1,3.5,60.5,3.5s40.7-1.2,60.5-3.5
-    	c8.3-1,14.5-8.3,14.5-17V732.5c0-9.4,7.3-17.1,16.3-17.1l410.8,0.3c8.2,0,15.2-6.4,16.2-14.9c2.3-19.8,3.5-40,3.5-60.4
-    	c0-20.2-1.2-40.1-3.4-59.7c-1-8.6-7.9-15-16.2-15l-410.9-0.3c-9,0-16.3-7.6-16.3-17.1V139z"
+            v409.2c0,9.4-7.3,17.1-16.3,17.1l-410.8-0.3c-8.2,0-15.2,6.4-16.2,14.9c-2.3,19.8-3.5,40-3.5,60.4c0,20.2,1.2,40.1,3.4,59.7
+            c1,8.6,7.9,15,16.2,15l410.9,0.3c9,0,16.3,7.6,16.3,17.1v409.3c0,8.7,6.3,16,14.5,17c19.9,2.3,40.1,3.5,60.5,3.5s40.7-1.2,60.5-3.5
+            c8.3-1,14.5-8.3,14.5-17V732.5c0-9.4,7.3-17.1,16.3-17.1l410.8,0.3c8.2,0,15.2-6.4,16.2-14.9c2.3-19.8,3.5-40,3.5-60.4
+            c0-20.2-1.2-40.1-3.4-59.7c-1-8.6-7.9-15-16.2-15l-410.9-0.3c-9,0-16.3-7.6-16.3-17.1V139z"
       />
       <path
         class="spinner"
         d="M1235.7,565.6c-9.6,0-17.2,8.7-16.2,18.7c1.8,18.4,2.7,37.1,2.7,56c0,19.1-0.9,38.1-2.7,56.7
-    	c-1,10,6.6,18.7,16.2,18.7l26.1,0c9,0,16.3-7.6,16.3-17l0.1-116c0-9.4-7.3-17.1-16.3-17.1L1235.7,565.6z"
+            c-1,10,6.6,18.7,16.2,18.7l26.1,0c9,0,16.3-7.6,16.3-17l0.1-116c0-9.4-7.3-17.1-16.3-17.1L1235.7,565.6z"
       />
       <path
         class="spinner"
         d="M58.5,640.3c0-19.1,0.9-38.1,2.7-56.7c1-10-6.6-18.7-16.2-18.7l-26.1,0c-9,0-16.3,7.6-16.3,17l-0.1,116
-    	c0,9.4,7.3,17.1,16.3,17.1l26.1,0c9.6,0,17.2-8.7,16.2-18.7C59.4,677.9,58.5,659.2,58.5,640.3z"
+            c0,9.4,7.3,17.1,16.3,17.1l26.1,0c9.6,0,17.2-8.7,16.2-18.7C59.4,677.9,58.5,659.2,58.5,640.3z"
       />
       <path
         class="spinner"
         d="M640.3,1222.1c-19.3,0-38.4-0.9-57.2-2.8c-9.6-0.9-17.9,6.9-17.9,17v24.7c0,9.4,7.3,17.1,16.3,17.1h117.6
-    	c9,0,16.3-7.6,16.3-17.1v-24.7c0-10.1-8.3-17.9-17.9-17C678.7,1221.2,659.6,1222.1,640.3,1222.1z"
+            c9,0,16.3-7.6,16.3-17.1v-24.7c0-10.1-8.3-17.9-17.9-17C678.7,1221.2,659.6,1222.1,640.3,1222.1z"
       />
-    </svg>
-    <h4 class="loading">Loading...</h4>
+          </svg>
+    -->
+    <!-- <h4 class="loading">Loading...</h4> -->
 
     <!-- spinner -->
-    <div class="shadow"></div>
+    <!-- <div class="shadow"></div> -->
+    <!-- <div id="enter" class="enter">ENTER</div> -->
+
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -128,9 +138,11 @@
           <li class="nav-item">
             <a href="projects.html" class="nav-link"> Projects </a>
           </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link"> Get In Touch </a>
-          </li>
+          <!--
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link"> Get In Touch </a>
+            </li>
+          -->
         </ul>
       </nav>
     </header>

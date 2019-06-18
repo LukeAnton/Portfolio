@@ -13,16 +13,15 @@ $(document).ready(function() {
   $(".menu-btn").click(function() {
     $("h1, h2, p,.skills, h3,.mail, .icons, .projects").toggle();
   });
-  $(".preloader").click(() => {
-    $(".preloader").toggle();
-  });
-  let fade_out = function() {
-    $(".preloader")
-      .fadeOut()
-      .empty();
-  };
-
-  setTimeout(fade_out, 15000);
+  // $(".preloader").click(() => {
+  //   $(".preloader, .spinner, .shadow, .circle, .loading").toggle();
+  // });
+  // let fade_out = function() {
+  //   $(".preloader")
+  //     .fadeOut()
+  //     .empty();
+  // };
+  // setTimeout(fade_out, 15000);
 });
 
 menuBtn.addEventListener("click", toggleMenu);
@@ -47,139 +46,153 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-// let btn = document.getElementById("cta");
+
+// let btn = document.getElementById("enter");
 // btn.onclick = function() {
 let pre = anime.timeline({
-  duration: 1500
+  duration: 2000
 });
 pre
-  .add({
-    targets: "h1, h2, .icons, .loading",
-    opacity: 0
-  })
-  .add({
-    targets: "h1, h2, .icons, .loading, .spinner",
-    scale: 1.2,
-    opacity: 1
-  })
-  .add({
-    targets: ".circle ",
-    scale: 0.9
-  })
-  .add({
-    targets: ".spinner",
-    scale: 4
-  })
-  .add(
-    {
-      targets: "h1, h2, .icons, .loading, .circle",
-      scale: 1
-    },
-    "-=1500"
-  );
 
-let preload = anime.timeline({
-  duration: 4000
-});
-preload
   .add({
-    targets: ".spinner",
-    rotate: "358deg",
-    duration: 3000
+    targets: "h1, h2, .icons",
+    scale: 1.2,
+    duration: 1000,
+    easing: "easeOutExpo"
   })
-  .add({
-    targets: ".spinner",
-    scale: 0.5,
-    rotate: "-366deg",
-    easing: "easeInExpo",
-    duration: 3000
-  })
-  .add({
-    targets: ".spinner",
-    duration: 2000
-  })
-  .add({
-    targets: ".spinner",
-    duration: 3000
-  })
-  .add(
-    {
-      targets: ".spinner",
-      duration: 3000,
-      scale: 0.91
-    },
-    "-=5600"
-  )
-  .add(
-    {
-      targets: ".polymorph",
-      points: [
-        { value: "215, 110 0, 110 0, -2 47.7, -2 120, 10" },
-        { value: "215, 110 0, 110 0, 0 47.7, 0 120, 10" },
-        { value: "215, 110 0, 110 0, 0 0, 0 67, 76" },
-        { value: "215, 110 0, 110 0, 0 0, 60 47, 45" },
-        { value: "215, 110 0, 110 0, 0 0, 100 47, 45" },
-        { value: "215, 110 0, 110 0, 0 0, 100 55, 110" },
-        { value: "215, 110 0, 110 0, 0 0, 200 55, 110" },
-        { value: "215, 110 0, 200 0, 0 0, 300 55, 200" }
-      ],
-      easing: "easeInExpo",
-      duration: 5600,
-      loop: false
-    },
-    "-=4000"
-  )
-  .add(
-    {
-      targets: ".spinner, .circle, .shadow",
-      duration: 3000,
-      scale: 1.02
-    },
-    "-=5600"
-  )
-  .add(
-    {
-      targets: ".spinner, .circle, .shadow",
-      duration: 3000,
-      scale: 1.02
-    },
-    "-=5600"
-  )
-  .add(
-    {
-      targets: ".spinner, .circle, .shadow",
-      duration: 3000,
-      scale: 0
-    },
-    "-=5000"
-  )
-  .add(
-    {
-      targets: " .loading",
-      duration: 2000,
-      opacity: 0
-    },
-    "-=4500"
-  )
-  .add(
-    {
-      targets: "h1, h2, .icons",
-      scale: 1.2,
-      duration: 1000,
-      easing: "easeOutExpo"
-    },
-    "-=7200"
-  )
   .add({
     targets: "h1, h2, .icons",
     scale: 1
   })
-  .add(
-    {
-      targets: "h1, h2, .icons",
-      scale: 1,
-      easing: "easeOutExpo"
-    },
-    "-=7000"
-  );
+  .add({
+    targets: "h1, h2, .icons",
+    scale: 1,
+    easing: "easeOutExpo"
+  });
 // };
+// .add({
+//   targets: ".polymorph",
+//   points: [
+//     { value: "215, 110 0, 110 0, -2 47.7, -2 120, 10" },
+//     { value: "215, 110 0, 110 0, 0 47.7, 0 120, 10" },
+//     { value: "215, 110 0, 110 0, 0 0, 0 67, 76" },
+//     { value: "215, 110 0, 110 0, 0 0, 60 47, 45" },
+//     { value: "215, 110 0, 110 0, 0 0, 100 47, 45" },
+//     { value: "215, 110 0, 110 0, 0 0, 100 55, 110" },
+//     { value: "215, 110 0, 110 0, 0 0, 200 55, 110" },
+//     { value: "215, 110 0, 200 0, 0 0, 300 55, 200" }
+//   ],
+//   easing: "easeInExpo",
+//   duration: 5600,
+//   loop: false
+// })
+// .add({
+//   targets: "h1, h2, .icons, .loading",
+//   opacity: 0
+// })
+// .add({
+//   targets: "h1, h2, .icons, .loading, .spinner",
+//   scale: 1.2,
+//   opacity: 1
+// })
+// .add({
+//   targets: ".circle ",
+//   scale: 0.9
+// })
+// .add({
+//   targets: ".spinner",
+//   scale: 4
+// })
+// .add(
+//   {
+//     targets: "h1, h2, .icons, .loading, .circle",
+//     scale: 1
+//   },
+//   "-=1500"
+// );
+//
+// let preload = anime.timeline({
+// duration: 4000
+// });
+// preload
+// .add({
+//   targets: ".spinner",
+//   rotate: "358deg",
+//   duration: 3000
+// })
+// .add({
+//   targets: ".spinner",
+//   scale: 0.5,
+//   rotate: "-366deg",
+//   easing: "easeInExpo",
+//   duration: 3000
+// })
+// .add({
+//   targets: ".spinner",
+//   duration: 2000
+// })
+// .add({
+//   targets: ".spinner",
+//   duration: 3000
+// })
+// .add(
+//   {
+//     targets: ".spinner",
+//     duration: 3000,
+//     scale: 0.91
+//   },
+//   "-=5600"
+// )
+// .add(
+//   {
+//     targets: ".spinner, .circle, .shadow",
+//     duration: 3000,
+//     scale: 1.02
+//   },
+//   "-=5600"
+// )
+// .add(
+//   {
+//     targets: ".spinner, .circle, .shadow",
+//     duration: 3000,
+//     scale: 1.02
+//   },
+//   "-=5600"
+// )
+// .add(
+//   {
+//     targets: ".spinner, .circle, .shadow",
+//     duration: 3000,
+//     scale: 0
+//   },
+//   "-=5000"
+// )
+// .add(
+//   {
+//     targets: " .loading",
+//     duration: 2000,
+//     opacity: 0
+//   },
+//   "-=4500"
+// )
+// .add(
+//   {
+//     targets: "h1, h2, .icons",
+//     scale: 1.2,
+//     duration: 1000,
+//     easing: "easeOutExpo"
+//   },
+//   "-=7200"
+// )
+// .add({
+//   targets: "h1, h2, .icons",
+//   scale: 1
+// })
+// .add(
+//   {
+//     targets: "h1, h2, .icons",
+//     scale: 1,
+//     easing: "easeOutExpo"
+//   },
+//   "-=7000"
+// );

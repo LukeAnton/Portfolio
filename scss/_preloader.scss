@@ -48,6 +48,23 @@
   stroke-miterlimit: 10;
   stroke-width: 5px;
 }
+.enter {
+  height: 1px;
+  transform-origin: top;
+  font-size: 20px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 20;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 52%;
+  text-shadow: 1px 1px 4px black;
+  left: 50%;
+  margin-right: 56px;
+  margin-left: -56px;
+  cursor: pointer;
+}
 .shadow {
   transform-origin: center;
   z-index: 10;

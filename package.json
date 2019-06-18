@@ -5,9 +5,15 @@
   "main": "index.js",
   "homepage": "https://LukeAnton.github.io/Portfolio",
   "dependencies": {
+    "@emotion/core": "^10.0.10",
     "animejs": "^3.0.1",
+    "gatsby-plugin-emotion": "^4.0.7",
+    "gatsby-plugin-typography": "^2.2.13",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {},
   "scripts": {
