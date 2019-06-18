@@ -1,113 +1,131 @@
 <!DOCTYPE html>
-<!––/*Boiler Plate*/––>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible"
-  content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
 
-
-  <!––css link––>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <title> About Me</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <title>About Me</title>
     <script src="js/jquery.js"></script>
-</head>
-<body id="sub">
-  <header>
-    <div class="menu-btn">
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-    </div>
-<!––menu specs––>
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-
+  </head>
+  <body id="sub">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
 
-        <a href="index.html" class="nav-link">
-          Home
-          </a>
-        </li>
-        <li class="nav-item current">
-        <a href="about.html"
-        class="nav-link">
-          About Me
-        </a>
-        </li>
-        <li class="nav-item">
-        <a href="projects.html" class="nav-link">
-          Projects
-        </a>
-        </li>
-        <!-- <li class="nav-item">
-        <a href="contact.html" class="nav-link">
-          Get In Touch
-        </a>
-        </li> -->
-      </ul>
-    </nav>
-  </header>
-  <main id="about">
-    <h1 class="lg-heading">
-    About
-    <span class="text-secondary">Me</span>
-    </h1>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link"> About Me </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link"> Projects </a>
+          </li>
+          <!--
+            <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Get In Touch
+            </a>
+            </li>
+          -->
+        </ul>
+      </nav>
+    </header>
+    <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
 
+      <div class="about-info">
+        <!--
+          <img src="img/tit.png" alt="Luke Anton"A
+          class="bio-image">
+        -->
 
-    <div class="about-info">
+        <div class="bio">
+          <p id="bio">
+            Hello! I am Luke, a Software Engineer Student at General Assembly. I
+            have over eight years experience working as a graphic designer and
+            later engineering drafting. This has developed my keen eye for
+            detail enabling me to produce polished projects.
+          </p>
 
-      <!--
-      <img src="img/tit.png" alt="Luke Anton"A
-      class="bio-image">
+          <p id="bio">Here are some things I'm experienced with:</p>
+
+          <ul class="skills">
+            <div class="g-item">
+              <i class="devicon-javascript-plain colored"
+                ><br /><span class="font">JavaScript</span></i
+              ><br /><br />
+            </div>
+
+            <div class="g-item">
+              <i class="devicon-html5-plain colored"
+                ><br /><span class="font">HTML</span></i
+              ><br /><br />
+            </div>
+
+            <div class="g-item">
+              <i class="devicon-sass-original colored"
+                ><br /><span class="font">SASS</span></i
+              ><br /><br />
+            </div>
+
+            <div class="g-item">
+              <i class="devicon-react-original colored"
+                ><br /><span class="font">React</span></i
+              ><br /><br />
+            </div>
+
+            <div class="g-item">
+              <i class="devicon-nodejs-plain colored "
+                ><br /><span class="font">Node.js</span></i
+              ><br />
+            </div>
+
+            <div class="g-item">
+              <i class="devicon-ruby-plain colored"
+                ><br /><span class="font">Ruby</span></i
+              ><br /><br />
+            </div>
+            <div class="g-item">
+              <i class="devicon-postgresql-plain colored"
+                ><br /><span class="font">PostgreSQL</span></i
+              ><br /><br />
+            </div>
+            <div class="g-item">
+              <i class="devicon-mongodb-plain colored"
+                ><br /><span class="font">MongoDB</span></i
+              ><br /><br />
+            </div>
+            <div class="g-item">
+              <i class="devicon-illustrator-plain colored"
+                ><br /><span class="font">Adobe Illustrator</span></i
+              ><br />
+            </div>
+          </ul>
+        </div>
+      </div>
+      <!-- <img class="type" src="img/aboutmesvg.svg" alt="book"></img> -->
+    </main>
+    <!--
+        <footer class="main-footer">
+        <div id="fLeft"> Copyright <span class="s"> &copy;</span> 2019  </div>
+        <div id="fRight"> Created By <span class="s"> Luke Anton</span> </div>
+      </footer>
     -->
-
-    <div class="bio">
-    <p id="bio">Hello! I am Luke, a Software Engineer Student at General Assembly.
-       I have over eight years experience working as a graphic designer and later engineering drafting.
-       This has developed my keen eye for detail enabling me to produce polished projects.
-         </p>
-
-<p id="bio">
-Here are some things I'm experienced with:
-</p>
-
-<ul class="skills">
-    <div class="g-item">
-  <i class="devicon-javascript-plain colored"><br><span class='font'>JavaScript</span></i><br><br>
-  <i class="devicon-html5-plain colored"><br><span class='font'>HTML</span></i><br><br>
-  <i class="devicon-sass-original colored"><br><span class='font'>SASS</span></i><br><br>
-  <i class="devicon-react-original colored"><br><span class='font'>React</span></i><br><br>
-  <i class="devicon-nodejs-plain colored"><br><span class='font'>Node.js</span></i><br>
-    </div>
-  <div class="g-item">
-  <i class="devicon-ruby-plain colored"><br><span class='font'>Ruby</span></i><br></><br>
-  <i class="devicon-postgresql-plain colored"><br><span class='font'>PostgreSQL</span></i><br><br>
-  <i class="devicon-mongodb-plain colored"><br><span class='font'>MongoDB</span></i><br><br>
-  <i class="devicon-illustrator-plain colored"><br><span class='font'>Adobe Illustrator</span></i><br>
-  </div>
-</ul>
-
-
-
-    </div>
-
-    </div>
-  <!-- <img class="type" src="img/aboutmesvg.svg" alt="book"></img> -->
-
-  </main>
-<!--
-  <footer class="main-footer">
-  <div id="fLeft"> Copyright <span class="s"> &copy;</span> 2019  </div>
-  <div id="fRight"> Created By <span class="s"> Luke Anton</span> </div>
-</footer>
- -->
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
