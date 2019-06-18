@@ -464,7 +464,7 @@ main {
   .projects .img6 {
     width: 100%;
     border-bottom: 40px rgba(0, 0, 0, 0.3) solid;
-    border-radius: 20px 20px 8px 8px; }
+    /* border-radius: 20px 20px 8px 8px; */ }
     .projects .img1:hover,
     .projects .img2:hover,
     .projects .img3:hover,
