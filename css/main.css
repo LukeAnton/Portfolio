@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap");
 #sub {
-  background: url(../img/sub.jpeg);
+  background: url(../img/sub1.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #sub:after {
@@ -136,7 +136,7 @@
   width: 80%;
 } */
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   main#home h1 {
     margin-top: 120px; } }
 
@@ -144,7 +144,7 @@
   .icons {
     width: 40% !important; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
   main#home h1 {
     margin-top: 120px; }
   /* .about-info {
@@ -156,6 +156,10 @@
   } */ }
 
 @media screen and (max-width: 768px) {
+  .about-info .skills {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1px; }
   /* .about-info {
     top: 180px;
     z-index: 100 !important;
@@ -194,7 +198,7 @@
       height: 150px;
       margin-bottom: -100px; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(1, 1fr); }
   main#home h1 {
     margin-top: 120px; }
   ul {
@@ -203,6 +207,10 @@
     background-size: 170px !important; } }
 
 @media screen and (max-width: 500px) {
+  .about-info .skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1px; }
   .icons {
     width: 80% !important; }
   main#home h1 {
@@ -215,6 +223,9 @@
     margin-right: 30px; }
   .portrait {
     background-size: 170px !important; } }
+
+i {
+  height: 100px !important; }
 
 .preloader {
   position: fixed;
@@ -320,7 +331,7 @@ body {
   font-family: "Rubik", sans-serif;
   list-style: 2.5; }
   body#bg-img {
-    background: url(../img/bookb.jpg);
+    background: url(../img/bookb1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -378,6 +389,12 @@ header {
   width: 100%;
   height: 500px; }
 
+.gcont {
+  /*   margin: auto;
+width: 40vw;
+background-color: black;
+height: 100px; */ }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -388,6 +405,7 @@ main {
     justify-content: space-around;
     width: 30%;
     transition: 0.5s; }
+    main .icons .cv,
     main .icons .twit,
     main .icons .gh {
       border: 3px solid rgba(2, 2, 2, 0);
@@ -397,6 +415,7 @@ main {
       color: white;
       text-decoration: none;
       width: 70px; }
+      main .icons .cv:hover,
       main .icons .twit:hover,
       main .icons .gh:hover {
         border: 3px solid rgba(7, 218, 246, 0.81);
@@ -441,10 +460,13 @@ main {
 .about-info {
   text-align: center; }
   .about-info .skills {
+    padding: 0;
+    margin: auto;
     text-shadow: -1px 1px 4px black;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    grid-template-columns: repeat(5, auto);
     grid-gap: 1px;
     font-family: "Rubik", sans-serif; }
   .about-info #bio {
@@ -556,7 +578,7 @@ color: set-text-color($primary-color); */
   width: 80%;
 } */
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   main#home h1 {
     margin-top: 120px; } }
 
@@ -564,7 +586,7 @@ color: set-text-color($primary-color); */
   .icons {
     width: 40% !important; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
   main#home h1 {
     margin-top: 120px; }
   /* .about-info {
@@ -576,6 +598,10 @@ color: set-text-color($primary-color); */
   } */ }
 
 @media screen and (max-width: 768px) {
+  .about-info .skills {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1px; }
   /* .about-info {
     top: 180px;
     z-index: 100 !important;
@@ -614,7 +640,7 @@ color: set-text-color($primary-color); */
       height: 150px;
       margin-bottom: -100px; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(1, 1fr); }
   main#home h1 {
     margin-top: 120px; }
   ul {
@@ -623,6 +649,10 @@ color: set-text-color($primary-color); */
     background-size: 170px !important; } }
 
 @media screen and (max-width: 500px) {
+  .about-info .skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1px; }
   .icons {
     width: 80% !important; }
   main#home h1 {
@@ -635,3 +665,6 @@ color: set-text-color($primary-color); */
     margin-right: 30px; }
   .portrait {
     background-size: 170px !important; } }
+
+i {
+  height: 100px !important; }
