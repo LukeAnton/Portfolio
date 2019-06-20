@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 #sub {
-  background: url(../img/sub.jpeg);
+  background: url(../img/sub1.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #sub:after {
@@ -11,7 +12,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.5); }
 
 .menu-btn {
   position: absolute;
@@ -56,7 +57,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #000000, 7;
+    background: black, 7;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 1s ease-out; }
@@ -91,6 +92,9 @@
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #87f1ff; }
+  .menu .nav-text {
+    display: inline-block;
+    margin-top: 5px !important; }
   .menu .nav-link {
     width: 100%;
     height: 60px;
@@ -100,6 +104,7 @@
     position: relative;
     font-size: 20px;
     padding: 25px 50px 58px 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 500;
     color: white;
@@ -107,12 +112,10 @@
     transition: all 1s ease-out; }
   .menu .nav-link:hover {
     transition: all 1s ease-out;
+    border: 2px solid #87f1ff;
     background-color: rgba(0, 0, 0, 0.4);
-    border: 3px solid #87f1ff;
     color: #87f1ff;
-    font-weight: 200;
-    margin-top: -5px;
-    font-size: 30px; }
+    font-weight: 200; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -326,12 +329,13 @@ i {
 body {
   background: #292929;
   color: #fff;
-  height: 100%;
+  height: 100vh;
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
   list-style: 2.5; }
   body#bg-img {
-    background: url(../img/bookb.jpg);
+    background: url(../img/bookb1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -340,9 +344,9 @@ body {
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       z-index: -1;
-      background: rgba(0, 0, 0, 0.7); }
+      background: rgba(0, 0, 0, 0.5); }
 
 @font-face {
   font-family: oxladeimport;
@@ -351,10 +355,15 @@ body {
 h1 {
   font-family: oxladeimport; }
 
+.sec {
+  margin-bottom: 40px !important;
+  font-family: "Varela Round", sans-serif;
+  font-size: 50px !important; }
+
 h1,
 h2,
 h3 {
-  text-shadow: -2px 2px 10px black;
+  text-shadow: -1px 1px 4px black;
   text-align: center;
   margin: 0;
   font-weight: 300;
@@ -373,6 +382,9 @@ h3 {
 
 h3 {
   text-align: left !important; }
+
+i {
+  font-size: 60px; }
 
 header {
   position: fixed;
@@ -458,26 +470,32 @@ main {
   font-weight: 700; }
 
 .about-info {
-  text-align: center; }
+  margin-top: 40px !important;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  text-shadow: -1px 1px 2px black; }
   .about-info .skills {
+    margin-top: 70px !important;
     padding: 0;
     margin: auto;
-    text-shadow: -1px 1px 4px black;
+    text-shadow: -0.5px 0.5px 0.2px black;
     text-align: center;
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 4px;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 1px;
-    font-family: "Rubik", sans-serif; }
+    grid-gap: 1px; }
   .about-info #bio {
     text-align: center; }
   .about-info .font {
-    font-family: "Rubik", sans-serif; }
+    font-family: "Varela Round", sans-serif !important;
+    font-size: 10px;
+    font-weight: 900; }
 
 .projects {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0; }
   .projects .img1,
   .projects .img2,
   .projects .img3,
@@ -485,21 +503,21 @@ main {
   .projects .img5,
   .projects .img6 {
     width: 100%;
-    border-bottom: 40px rgba(0, 0, 0, 0.3) solid; }
+    padding: 0; }
     .projects .img1:hover,
     .projects .img2:hover,
     .projects .img3:hover,
     .projects .img4:hover,
     .projects .img5:hover,
     .projects .img6:hover {
-      opacity: 0.5;
+      filter: blur(8px);
       transition: all 1s ease-out; }
   .projects .project-text {
     text-decoration: none;
     text-align: center;
     margin-top: -33px;
     color: white;
-    text-shadow: -1px 1px 4px black; }
+    text-shadow: -1px 1px 10px black; }
 
 .boxes {
   margin-top: 150px;
@@ -544,22 +562,6 @@ ul {
   background: gray;
   color: white; }
 
-.main-footer {
-  text-align: center;
-  padding: 20px;
-  /*   background: rgba(0, 0, 0, 0.7);
-color: set-text-color($primary-color); */
-  height: 65px;
-  margin: 0 10px 10px 10px; }
-
-.main-footer:after {
-  visibility: hidden;
-  display: block;
-  content: " ";
-  clear: both;
-  height: 0;
-  font-size: 0; }
-
 #fLeft {
   float: left;
   margin-left: 10px; }
@@ -567,6 +569,82 @@ color: set-text-color($primary-color); */
 #fRight {
   float: right;
   margin-right: 10px; }
+
+.hr2 {
+  opacity: 0.5;
+  margin: 0 10%; }
+
+.showw {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+
+.blur {
+  filter: blur(8px); }
+
+.showw .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+.project-info {
+  margin-top: 10px !important; }
+
+.show-second img {
+  transition: all 0.3s ease-in-out; }
+
+.show-second .mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateX(-110%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out; }
+
+.show-second:hover .mask {
+  transform: translateX(0px); }
+
+.details-container {
+  margin-top: 10%; }
+
+.show-second:hover p {
+  opacity: 1;
+  transition-delay: 0.8s; }
+
+.project-name {
+  margin-top: 1px !important;
+  font-size: 30px; }
+
+.what {
+  margin-top: -3px;
+  color: #e7e8ff;
+  letter-spacing: 3px; }
+
+.techu {
+  margin-top: 10px;
+  color: #e7e8ff;
+  letter-spacing: 3px;
+  font-size: 13px; }
+
+.tech {
+  font-size: 12px; }
+
+.hr1 {
+  opacity: 0.3;
+  margin-top: -10px;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.pcons {
+  padding: 30px;
+  color: white;
+  font-size: 20px; }
+  .pcons:hover {
+    color: #87f1ff; }
 
 @media screen and (min-width: 1171px) {
   /*   .about-info {

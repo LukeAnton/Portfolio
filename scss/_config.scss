@@ -1,10 +1,10 @@
 //colors & imports
-$primary-color: #000000;
+$primary-color: black;
 $secondary-color: #87f1ff;
 $show-home-image: true;
-$home-image: url(../img/bookb.jpg);
-$sub-image: url(../img/sub.jpeg);
-$background-opacity: 0.7;
+$home-image: url(../img/bookb1.jpg);
+$sub-image: url(../img/sub1.jpg);
+$background-opacity: 0.5;
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap");
 
 @mixin easeOut {
@@ -24,7 +24,7 @@ $background-opacity: 0.7;
         top: 0;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }

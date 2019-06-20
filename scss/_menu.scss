@@ -15,7 +15,6 @@
     margin: 0 0 3px 0;
     background: #fff;
     @include easeOut;
-
     &:hover {
     }
   }
@@ -29,7 +28,6 @@
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
-
       //Line 1 - Rotate
       &:nth-child(2) {
         opacity: 0;
@@ -49,7 +47,6 @@
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
-
   &.show {
     visibility: visible;
   }
@@ -73,7 +70,6 @@
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
-
     &.show {
       // Slide in from top
       transform: translate3d(0, 0, 0);
@@ -113,17 +109,18 @@
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
-
     &.show {
       //Slide in from right
       transform: translate3d(0, 0, 0);
     }
-
     &.current > a {
       color: $secondary-color;
     }
   }
-
+  .nav-text {
+    display: inline-block;
+    margin-top: 5px !important;
+  }
   .nav-link {
     width: 100%;
     height: 60px;
@@ -133,20 +130,21 @@
     position: relative;
     font-size: 20px;
     padding: 25px 50px 58px 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 500;
     color: white;
     text-decoration: none;
+
     @include easeOut;
   }
   .nav-link:hover {
     @include easeOut;
+    border: 2px solid $secondary-color;
     background-color: rgba(0, 0, 0, 0.4);
-    border: 3px solid $secondary-color;
+
     color: $secondary-color;
     font-weight: 200;
-    margin-top: -5px;
-    font-size: 30px;
   }
 }
 
